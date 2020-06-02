@@ -92,6 +92,17 @@ npx knex migrate:latest --knexfile knexfile.ts
     - point_id
     - item_id
 
+## Funcionalidades
+
+### WEB
+
+- Listar os itens de coleta
+
+### MOBILE
+
+- Listar pontos (filtro por estado/cidade/itens)
+- Listarum ponto de coleta específico
+
 ## Migrations
 
 > Histórico do banco de dados
