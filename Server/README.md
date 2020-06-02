@@ -62,11 +62,7 @@ npx typescript --init
     > Ex: `http://localhost:3333/users?search=on`
 - Request Body: Parâmetros para criação/atualização de informação
 
-<p align="center">
-  <a href="http://knexjs.org/">
-    <img src="https://knexjs.org/assets/images/knex.png" alt="knex" style="width:100px"/>
-  </a>
-</p>
+# Knex.js
 
 ```SQL
 SELECT * FROM users WHERE name = 'Diego'
@@ -74,3 +70,28 @@ SELECT * FROM users WHERE name = 'Diego'
 ```js
 knex('users').where('name', 'Diego').select('*')
 ```
+```npm
+npx knex migrate:latest --knexfile knexfile.ts
+```
+
+## Entidades e Relacionamentos da aplicação
+
+- point (pontos de coleta)
+    - image
+    - name
+    - email
+    - whatsapp
+    - latitude
+    - longitude
+    - city
+    - uf
+- items (itens para coleta)
+    - title
+    - image
+- point-items (N-N, relacionamento dos itens que um ponto coleta)
+    - point_id
+    - item_id
+
+## Migrations
+
+> Histórico do banco de dados
