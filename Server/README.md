@@ -1,3 +1,13 @@
+
+<p align="center">
+  <a href="https://github.com/fajzanetti">
+        <img src="https://img.shields.io/badge/GitHub-fajzanetti-7159C1?logo=GitHub"/>
+    </a>
+    <a href="https://www.linkedin.com/in/felipezanetti/">
+        <img src="https://img.shields.io/badge/Linkedin-felipezanetti-7159C1?logo=linkedin"/>
+    </a>
+</p>
+
 # Como instalar as dependências
 
 ## dependencies
@@ -5,7 +15,6 @@
 ```npm
 npm install express
 ```
-npm install typescript -D
 
 ## devDependencies
 
@@ -50,3 +59,16 @@ npx typescript --init
 - Query Param: Parâmetros que vem na prórpia rota geralmente opcionais para filtros, paginação
     > Ex: `http://localhost:3333/users?search=on`
 - Request Body: Parâmetros para criação/atualização de informação
+
+<p align="center">
+  <a href="http://knexjs.org/">
+    <img src="https://knexjs.org/assets/images/knex.png" alt="knex" style="width:100px"/>
+  </a>
+</p>
+
+```SQL
+SELECT * FROM users WHERE name = 'Diego'
+```
+```js
+knex('users').where('name', 'Diego').select('*')
+```
