@@ -14,6 +14,8 @@
 
 ```npm
 npm install express
+npm install knex
+npm install sqlite3
 ```
 
 ## devDependencies
