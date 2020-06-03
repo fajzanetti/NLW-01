@@ -1,38 +1,3 @@
-
-<p align="center">
-  <a href="https://github.com/fajzanetti">
-        <img src="https://img.shields.io/badge/GitHub-fajzanetti-7159C1?logo=GitHub"/>
-    </a>
-    <a href="https://www.linkedin.com/in/felipezanetti/">
-        <img src="https://img.shields.io/badge/Linkedin-felipezanetti-7159C1?logo=linkedin"/>
-    </a>
-</p>
-
-# Como instalar as dependências
-
-## dependencies
-
-```npm
-npm install express
-npm install knex
-npm install sqlite3
-```
-
-## devDependencies
-
-```npm
-npm install @types/express -D
-npm install typescript -D
-npm install ts-node -D
-npm install ts-node-dev -D
-```
-
-## TypeScript config
-
-```npm
-npx typescript --init
-```
-
 # Anotações
 
 ## Rotas e Recursos
@@ -62,21 +27,38 @@ npx typescript --init
     > Ex: `http://localhost:3333/users?search=on`
 - Request Body: Parâmetros para criação/atualização de informação
 
-# Knex.js
+## Knex.js
+
+* Exemplo do SQL para KNEX
 
 ```SQL
 SELECT * FROM users WHERE name = 'Diego'
-```
-```js
 knex('users').where('name', 'Diego').select('*')
 ```
-```npm
+
+#### Migrations
+
+As migrações permitem que você defina conjuntos de alterações de esquema, portanto é fácil atualizar um banco de dados.
+
+> Histórico do banco de dados
+
+* Comandos para executar as migrates
+```
 npx knex migrate:latest --knexfile knexfile.ts
+```
+
+#### Seeds
+
+Os arquivos de `seeds` permitem preencher seu banco de dados com dados de teste ou propagação independentes dos arquivos de migração.
+
+* Comandos para executar as seeds
+```
+npx knex seed:run --knexfile knexfile.ts
 ```
 
 ## Entidades e Relacionamentos da aplicação
 
-- point (pontos de coleta)
+- ✔️ points (pontos de coleta)
     - image
     - name
     - email
@@ -85,24 +67,54 @@ npx knex migrate:latest --knexfile knexfile.ts
     - longitude
     - city
     - uf
-- items (itens para coleta)
+    
+- ✔️ items (itens para coleta)
     - title
     - image
-- point-items (N-N, relacionamento dos itens que um ponto coleta)
+- ✔️ point-items (N-N, relacionamento dos itens que um ponto coleta)
     - point_id
     - item_id
 
 ## Funcionalidades
 
-### WEB
+#### WEB
 
 - Listar os itens de coleta
 
-### MOBILE
+#### MOBILE
 
 - Listar pontos (filtro por estado/cidade/itens)
 - Listarum ponto de coleta específico
 
-## Migrations
+## Comandos utilizados no projeto
 
-> Histórico do banco de dados
+#### Create
+
+```npm 
+npm init -y
+```
+
+#### dependencies
+
+```
+npm install express
+npm install knex
+npm install sqlite3
+npm install cors
+```
+
+#### devDependencies
+
+```
+npm install @types/express -D
+npm install typescript -D
+npm install ts-node -D
+npm install ts-node-dev -D
+npm install @types/cors -D
+```
+
+#### TypeScript config
+
+```
+npx typescript --init
+```
