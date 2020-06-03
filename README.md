@@ -3,15 +3,15 @@
 </p>
 <p align="center">
     <a href="https://github.com/fajzanetti">
-        <img src="https://img.shields.io/badge/GitHub-fajzanetti-7159C1?logo=GitHub"/>
+        <img src="https://img.shields.io/badge/GitHub-fajzanetti-7159C1?logo=GitHub&style=for-the-badge"/>
     </a>
     <a href="https://www.linkedin.com/in/felipezanetti/">
-        <img src="https://img.shields.io/badge/Linkedin-felipezanetti-7159C1?logo=linkedin"/>
+        <img src="https://img.shields.io/badge/Linkedin-felipezanetti-7159C1?logo=linkedin&style=for-the-badge"/>
     </a>
-    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/fajzanetti/nlw?color=7159C1" />
-    <img alt="GitHub language count" src="https://img.shields.io/github/languages/top/fajzanetti/nlw?color=7159C1" />
-    <img alt="GitHub language count" src="https://img.shields.io/github/last-commit/fajzanetti/nlw?color=7159C1" />
-    <img alt="GitHub language count" src="https://img.shields.io/github/repo-size/fajzanetti/nlw?color=7159C1" />
+    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/fajzanetti/nlw?color=7159C1&style=for-the-badge" />
+    <img alt="GitHub language count" src="https://img.shields.io/github/languages/top/fajzanetti/nlw?color=7159C1&style=for-the-badge" />
+    <img alt="GitHub language count" src="https://img.shields.io/github/last-commit/fajzanetti/nlw?color=7159C1&style=for-the-badge" />
+    <img alt="GitHub language count" src="https://img.shields.io/github/repo-size/fajzanetti/nlw?color=7159C1&style=for-the-badge" />
 </p>
 
 # O que é o Next Level Week?
