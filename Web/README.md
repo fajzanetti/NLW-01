@@ -34,6 +34,10 @@ Sempre que cria um estado para um array ou um objeto, precisa manualmente inform
 
 Um aplicativo de página única é uma aplicação web ou site que consiste de uma única página web com o objetivo de fornecer uma experiência do usuário similar à de um aplicativo desktop.
 
+## TypeScript
+
+- React + TypeScript Cheatsheets: [clique aqui](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet)
+
 ## Comandos utilizados no projeto
 
 #### dependencies
@@ -54,3 +58,8 @@ npm install axios
 npm install @types/react-router-dom -D
 npm install @types/react-leaflet
 ```
+
+#### API IBGE
+
+- [UFs](https://servicodados.ibge.gov.br/api/docs/localidades?versao=1#api-UFs-estadosGet)
+- [Municípios por UF](https://servicodados.ibge.gov.br/api/docs/localidades?versao=1#api-Municipios-estadosUFMunicipiosGet)
