@@ -39,10 +39,15 @@ Um aplicativo de página única é uma aplicação web ou site que consiste de u
 ```
 npm install react-icons
 npm install react-router-dom
+npm install leaflet react-leaflet
 ```
+- [Leaflet](https://leafletjs.com/)
+- [React Leaflet](https://react-leaflet.js.org/)
+> O **Leaflet** é a principal biblioteca JavaScript de código aberto para mapas interativos
 
 #### devDependencies
 
 ```
 npm install @types/react-router-dom -D
+npm install @types/react-leaflet
 ``
