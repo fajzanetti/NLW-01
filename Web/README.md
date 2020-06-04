@@ -28,10 +28,21 @@ Props, que é uma abreviação de propriedades, são informações que podem ser
 
 Estados são informações mantidas pelo próprio componente.
 
-## Comandos usado no projeto
+## SPA - Single Page Application (Aplicativo de página única)
+
+Um aplicativo de página única é uma aplicação web ou site que consiste de uma única página web com o objetivo de fornecer uma experiência do usuário similar à de um aplicativo desktop.
+
+## Comandos utilizados no projeto
 
 #### dependencies
 
 ```
 npm install react-icons
+npm install react-router-dom
 ```
+
+#### devDependencies
+
+```
+npm install @types/react-router-dom -D
+``
