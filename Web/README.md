@@ -28,6 +28,8 @@ Props, que é uma abreviação de propriedades, são informações que podem ser
 
 Estados são informações mantidas pelo próprio componente.
 
+Sempre que cria um estado para um array ou um objeto, precisa manualmente informar o tipo da variavel
+
 ## SPA - Single Page Application (Aplicativo de página única)
 
 Um aplicativo de página única é uma aplicação web ou site que consiste de uma única página web com o objetivo de fornecer uma experiência do usuário similar à de um aplicativo desktop.
@@ -40,6 +42,7 @@ Um aplicativo de página única é uma aplicação web ou site que consiste de u
 npm install react-icons
 npm install react-router-dom
 npm install leaflet react-leaflet
+npm install axios
 ```
 - [Leaflet](https://leafletjs.com/)
 - [React Leaflet](https://react-leaflet.js.org/)
@@ -50,4 +53,4 @@ npm install leaflet react-leaflet
 ```
 npm install @types/react-router-dom -D
 npm install @types/react-leaflet
-``
+```
