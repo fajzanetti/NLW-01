@@ -31,6 +31,7 @@ Para gerenciar o processo de coleta de lixo nas cidades. Com ele, é possível a
 - [ReactJS](https://reactjs.org)
 - [React Native](https://facebook.github.io/react-native/)
 - [Expo](https://expo.io/)
+> Comando para installar o expo globalmente na máquina: `npm install -g expo-cli`
 
 # Desing
 
