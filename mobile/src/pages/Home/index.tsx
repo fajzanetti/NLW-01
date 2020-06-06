@@ -74,7 +74,7 @@ const Home = () => {
             />
             <Picker
               selectedValue={uf}
-              style={[uf !== '0' ? { color: "#000" } : { color: "#ccc" }, styles.pickerContent]}
+              style={[uf !== '' ? { color: "#000" } : { color: "#ccc" }, styles.pickerContent]}
               onValueChange={handleSelectUF}
 
             >
