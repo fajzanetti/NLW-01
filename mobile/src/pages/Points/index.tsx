@@ -2,7 +2,7 @@ import React from 'react'
 import Constants from 'expo-constants'
 import { Feather as Icon } from '@expo/vector-icons'
 import { useNavigation } from '@react-navigation/native'
-import { StyleSheet, View, Text, TouchableOpacity, ScrollView, Image } from 'react-native'
+import { StyleSheet, View, Text, TouchableOpacity, ScrollView, Image, SafeAreaView } from 'react-native'
 import MapView, { Marker } from 'react-native-maps'
 import { SvgUri } from 'react-native-svg'
 
@@ -18,15 +18,16 @@ const Points = () => {
   }
 
   return (
-    <>
+    <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.container}>
-        <TouchableOpacity onPress={handleNavigateBack}>
+        <TouchableOpacity onPress={handleNavigateBack} style={styles.voltar}>
           <Icon name="arrow-left" size={20} color="#34CB79" />
+          <Text style={styles.voltarText}>Voltar</Text>
         </TouchableOpacity>
 
         <View style={styles.bemVindo}>
           <Icon name="smile" size={20} color="#34CB79" style={{ paddingRight: 5 }} />
-          <Text style={styles.title}>Bem vindo.</Text>
+          <Text style={[styles.title, { color: '#34CB79' }]}>Bem vindo.</Text>
         </View>
         <Text style={styles.description}>Encontre no mapa um ponto de coleta.</Text>
 
@@ -93,7 +94,7 @@ const Points = () => {
           </TouchableOpacity>
         </ScrollView>
       </View>
-    </>
+    </SafeAreaView>
   )
 }
 
@@ -102,6 +103,19 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 32,
     paddingTop: 20 + Constants.statusBarHeight,
+  },
+
+  voltar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+  },
+
+
+  voltarText: {
+    color: '#34CB79',
+    fontFamily: 'Roboto_500Medium',
+    fontSize: 20,
   },
 
   title: {
