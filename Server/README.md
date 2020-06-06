@@ -101,8 +101,9 @@ npm install express
 npm install knex
 npm install sqlite3
 npm install cors
+npm install multer
 ```
-
+- Multer para upload de arquivos
 #### devDependencies
 
 ```
@@ -111,6 +112,7 @@ npm install typescript -D
 npm install ts-node -D
 npm install ts-node-dev -D
 npm install @types/cors -D
+npm install @types/multer -D
 ```
 
 #### TypeScript config
