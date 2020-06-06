@@ -1,1 +1,3 @@
 node_modules/
+uploads/points/*
+!uploads/points/.gitkeep
