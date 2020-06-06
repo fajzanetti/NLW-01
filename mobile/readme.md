@@ -19,6 +19,7 @@ expo install react-native-gesture-handler react-native-reanimated react-native-s
 expo install react-native-maps
 expo install expo-constants
 expo install react-native-svg
+npm install axios
 ```
 > [React Navigation](https://reactnavigation.org/docs/getting-started)
 
