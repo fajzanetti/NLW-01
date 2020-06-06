@@ -44,5 +44,5 @@ Para gerenciar o processo de coleta de lixo nas cidades. Com ele, é possível a
 Link para o Layout do projeto, feito no Figma: [Clique aqui](https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/Ecoleta)
 
 <h1 align="center">
-    <img alt="Capa" title="Capa" src=".github/capa.svg" width="500px" />
+    <img alt="Capa" title="Capa" src=".github/Capa.svg" width="500px" />
 </h1>
