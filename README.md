@@ -64,37 +64,37 @@ Para a aplicação mobile funcionar corretamente altere a `baseURL` para o ender
 ## ⚙️ Back-end
 
 ```js
-`cd Server` //Para entrar na pasta do back-end.
+cd Server //Para entrar na pasta do back-end.
 
-`npm install` //Para instalar todas dependências.
+npm install //Para instalar todas dependências.
 
-`npm run knex:migrate` //As migrações permitem que você defina conjuntos de alterações de esquema, portanto é fácil atualizar um banco de dados.
+npm run knex:migrate //As migrações permitem que você defina conjuntos de alterações de esquema, portanto é fácil atualizar um banco de dados.
 
-`npm run knex:seed` //Os arquivos de seeds permitem preencher seu banco de dados com dados de teste ou propagação independentes dos arquivos de migração.
+npm run knex:seed //Os arquivos de seeds permitem preencher seu banco de dados com dados de teste ou propagação independentes dos arquivos de migração.
 
-`npm run dev` //Para iniciar o servidor.
+npm run dev //Para iniciar o servidor.
 ```
 > Mais informações sobre o back-end: [Clique aqui](https://github.com/fajzanetti/NLW-01/tree/master/Server#anota%C3%A7%C3%B5es)
 
 ## 💻 Front-end
 
 ```js
-`cd Web` : //Para entrar na pasta do back-end;
+cd Web : //Para entrar na pasta do back-end;
 
-`npm install` //Para instalar todas dependências;
+npm install //Para instalar todas dependências;
 
-`npm start` //Para iniciar o front-end web.
+npm start //Para iniciar o front-end web.
 ```
 > Mais informações sobre o front-end: [Clique aqui](https://github.com/fajzanetti/NLW-01/tree/master/Web#anota%C3%A7%C3%B5es)
 
 ## 📱 Mobile
 
 ```js
-`cd Mobile` : //Para entrar na pasta do back-end;
+cd Mobile : //Para entrar na pasta do back-end;
 
-`npm install` //Para instalar todas dependências;
+npm install //Para instalar todas dependências;
 
-`npm start / expo start` //Para iniciar a aplicação mobile.
+npm start / expo start //Para iniciar a aplicação mobile.
 ```
 > Mais informações sobre o mobile: [Clique aqui](https://github.com/fajzanetti/NLW-01/tree/master/mobile#comando-utilizado-no-projeto)
 
