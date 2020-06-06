@@ -102,6 +102,7 @@ npm install knex
 npm install sqlite3
 npm install cors
 npm install multer
+npm install celebrate
 ```
 - Multer para upload de arquivos
 #### devDependencies
@@ -113,6 +114,7 @@ npm install ts-node -D
 npm install ts-node-dev -D
 npm install @types/cors -D
 npm install @types/multer -D
+npm install @types/hapi__joi -D
 ```
 
 #### TypeScript config
