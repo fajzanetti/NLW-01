@@ -18,7 +18,7 @@
   <a href="#-Projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Desing">Desing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-Como-utilizar:">Como Utilizar</a>
+  <a href="#-Como-utilizar">Como Utilizar</a>
 </p>
 
 # 🤩 O que é o Next Level Week?
