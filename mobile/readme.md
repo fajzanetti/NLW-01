@@ -20,6 +20,7 @@ expo install react-native-maps
 expo install expo-constants
 expo install react-native-svg
 npm install axios
+expo install expo-location
 ```
 > [React Navigation](https://reactnavigation.org/docs/getting-started)
 
