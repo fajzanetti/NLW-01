@@ -22,8 +22,9 @@ expo install react-native-svg
 npm install axios
 expo install expo-location
 expo install expo-mail-composer
+npm install axios
 ```
-> [React Navigation](https://reactnavigation.org/docs/getting-started)
-> [Mail Composer](https://docs.expo.io/versions/latest/sdk/mail-composer/)
+- [React Navigation](https://reactnavigation.org/docs/getting-started)
+- [Mail Composer](https://docs.expo.io/versions/latest/sdk/mail-composer/)
 
 # devDependencies

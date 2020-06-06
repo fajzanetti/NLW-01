@@ -1,13 +1,32 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import {
+  StyleSheet,
+  View,
+  ImageBackground,
+  Text,
+  Image,
+  TextInput,
+  KeyboardAvoidingView,
+  Platform,
+  Picker
+} from 'react-native'
 import { Feather as Icon } from '@expo/vector-icons'
-import { StyleSheet, View, ImageBackground, Text, Image, TextInput, KeyboardAvoidingView, Platform } from 'react-native'
 import { RectButton } from 'react-native-gesture-handler'
 import { useNavigation } from '@react-navigation/native'
+import axios from 'axios'
+
+
+interface IBGEUfRes {
+  sigla: string
+  nome: string
+}
 
 const Home = () => {
   const navigation = useNavigation()
+
   const [uf, setUf] = useState('')
   const [city, setCity] = useState('')
+  const [ufIBGE, setUfIBGE] = useState<IBGEUfRes[]>([])
 
   function handleNavigateToPoints() {
     navigation.navigate('Points', {
@@ -15,6 +34,17 @@ const Home = () => {
       city
     })
   }
+
+  function handleSelectUF(uf: Picker) {
+    setUf(String(uf))
+  }
+
+  useEffect(() => {
+    axios.get<IBGEUfRes[]>("https://servicodados.ibge.gov.br/api/v1/localidades/estados").then(res => {
+      const ufInitials = res.data
+      setUfIBGE(ufInitials)
+    })
+  }, [])
 
   return (
     <KeyboardAvoidingView
@@ -37,15 +67,26 @@ const Home = () => {
           </View>
         </View>
         <View style={styles.footer}>
-          <TextInput
-            style={styles.input}
-            placeholder='Digite a UF'
-            maxLength={2}
-            autoCapitalize="characters"
-            autoCorrect={false}
-            value={uf}
-            onChangeText={setUf}
-          />
+          <View style={styles.pickerWrapper}>
+            <Icon
+              name="chevron-down"
+              style={styles.pickerIcon}
+            />
+            <Picker
+              selectedValue={uf}
+              style={[uf !== '0' ? { color: "#000" } : { color: "#ccc" }, styles.pickerContent]}
+              onValueChange={handleSelectUF}
+
+            >
+
+              <Picker.Item label='Selecione uma UF' value='0' />
+              {ufIBGE.map(uf => (
+                <Picker.Item key={uf.sigla} label={uf.nome} value={uf.sigla} />
+              ))}
+            </Picker>
+          </View>
+
+
           <TextInput
             style={styles.input}
             placeholder='Digite a cidade'
@@ -100,7 +141,26 @@ const styles = StyleSheet.create({
 
   footer: {},
 
-  select: {},
+  pickerWrapper: {
+    height: 60,
+    backgroundColor: '#FFF',
+    borderRadius: 10,
+    marginBottom: 8,
+    paddingHorizontal: 24,
+    justifyContent: 'center',
+  },
+
+  pickerIcon: {
+    color: '#34CB79',
+    position: "absolute",
+    justifyContent: 'center',
+    right: 20,
+    fontSize: 30
+  },
+
+  pickerContent: {
+    backgroundColor: "transparent",
+  },
 
   input: {
     height: 60,
