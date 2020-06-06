@@ -14,11 +14,11 @@
     <img alt="GitHub language count" src="https://img.shields.io/github/repo-size/fajzanetti/nlw?color=7159C1" />
 </p>
 <p align="center">
-  <a href="#🤩-O-que-é-o-Next-Level-Week?">Next Level Week</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#🚧-Projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#💾-Tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#💻-Desing">Desing</a>
-  <a href="#🎓-Como-utilizar:">Como Utilizar</a>
+  <a href="#-O-que-é-o-Next-Level-Week?">Next Level Week</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Desing">Desing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Como-utilizar:">Como Utilizar</a>
 </p>
 
 # 🤩 O que é o Next Level Week?
